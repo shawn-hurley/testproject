@@ -35,4 +35,5 @@ class InventoryRecordResource(ModelResource):
 		filtering = {
 			'item': ALL_WITH_RELATIONS
 		}
+		authentication = ApiKeyAuthentication()
 		authorization = Authorization()
